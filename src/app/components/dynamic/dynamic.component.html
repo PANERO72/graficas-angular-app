@@ -1,0 +1,19 @@
+<h4>Gráfica Dinámica</h4>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <div style="display: block">
+          <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
+            [legend]="barChartLegend" [chartType]="barChartType" (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)"></canvas>
+        </div>
+        
+    </div>
+</div>
+<div class="row mt-4">
+    <div class="col-md-4"></div>
+    <div class="col-md-4 text-center">
+        <button class="btn btn-primary" (click)="randomize()">Update</button>
+    </div>
+    <div class="col-md-4"></div>
+</div>

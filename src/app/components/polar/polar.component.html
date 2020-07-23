@@ -1,0 +1,21 @@
+<h4>Gráfica de Área Polar</h4>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+      <div style="display: block">
+        <canvas baseChart
+          [data]="polarAreaChartData"
+          [labels]="polarAreaChartLabels"
+          [legend]="polarAreaLegend"
+          [chartType]="polarAreaChartType">
+        </canvas>
+      </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4 mt-4 text-center">
+        <button class="btn btn-primary" (click)="randomize()">Update</button>
+    </div>
+    <div class="col-md-4"></div>
+  </div>

@@ -1,0 +1,21 @@
+<h4>Gráfica de Radar</h4>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+      <div style="display: block">
+        <canvas baseChart
+          [datasets]="radarChartData"
+          [options]="radarChartOptions"
+          [labels]="radarChartLabels"
+          [chartType]="radarChartType">
+        </canvas>
+      </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4 mt-4 text-center">
+        <button class="btn btn-primary" (click)="randomize()">Update</button>
+    </div>
+    <div class="col-md-4"></div>
+</div>

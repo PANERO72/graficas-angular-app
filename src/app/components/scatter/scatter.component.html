@@ -1,0 +1,21 @@
+<h4>Gráfica de Dispersión</h4>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+      <div style="display: block">
+        <canvas baseChart
+          [datasets]="scatterChartData"
+          [options]="scatterChartOptions"
+          [labels]="scatterChartLabels"
+          [chartType]="scatterChartType">
+        </canvas>
+      </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4 text-center mt-4">
+        <button class=" btn btn-primary" (click)="randomize()">Update</button>
+    </div>
+    <div class="col-md-4"></div>
+</div>

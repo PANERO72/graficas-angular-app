@@ -1,0 +1,23 @@
+<h4>Gráfica de Burbujas</h4>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+      <div style="display: block">
+        <canvas baseChart
+          [datasets]="bubbleChartData"
+          [options]="bubbleChartOptions"
+          [colors]="bubbleChartColors"
+          [legend]="bubbleChartLegend"
+          [chartType]="bubbleChartType">
+        </canvas>
+      </div>
+      
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4 text-center mt-4">
+        <button class=" btn btn-primary" (click)="randomize()">Update</button>
+    </div>
+    <div class="col-md-4"></div>
+</div>
